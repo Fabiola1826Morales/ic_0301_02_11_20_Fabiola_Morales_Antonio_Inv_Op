@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Grafica de una ecuación lineal: Fichero Fuente C:/Users/DELL/Downloads/Graficas/correcta/gnuplot_i/src/gnuplot_i.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Grafica de una ecuación lineal
+   </div>
+   <div id="projectbrief">Se grafica mediante ayuda de una api</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a class="el" href="dir_a012d146b38a71895bc17ea9b2bde3b5.html">Graficas</a></li><li class="navelem"><a class="el" href="dir_769f32cee29bccd11be666fa225ebb35.html">correcta</a></li><li class="navelem"><a class="el" href="dir_fc971fec3088f64c4111208600ed08a7.html">gnuplot_i</a></li><li class="navelem"><a class="el" href="dir_ba77844bf175f3e6fe184802904f563d.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">gnuplot_i.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="gnuplot__i_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    $Id: gnuplot_i.h,v 1.11 2003/01/27 08:58:04 ndevilla Exp $</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    $Author: ndevilla $</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    $Date: 2003/01/27 08:58:04 $</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    $Revision: 1.11 $</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef _GNUPLOT_PIPES_H_</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define _GNUPLOT_PIPES_H_</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*---------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">                                Includes</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> ---------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="gnuplot__i_8h.html#a0b92738856c4bda43003d1c847483dd2">   34</a></span>&#160;<span class="preprocessor">#define GP_MAX_TMP_FILES    64</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*---------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">                                New Types</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> ---------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">   57</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">_GNUPLOT_CTRL_</a> {</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a3ef5f7c93a493075059250cb3b74ce91">   59</a></span>&#160;    FILE    * <a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a3ef5f7c93a493075059250cb3b74ce91">gnucmd</a> ;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a8563b2999a18a1f65451f90d51bf38e8">   62</a></span>&#160;    <span class="keywordtype">int</span>       <a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a8563b2999a18a1f65451f90d51bf38e8">nplots</a> ;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#aa8541672044781c87eab8eef4793ffe8">   64</a></span>&#160;    <span class="keywordtype">char</span>      <a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#aa8541672044781c87eab8eef4793ffe8">pstyle</a>[32] ;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#aa4fe3a3e8203bf0177b60116bb55796c">   67</a></span>&#160;    <span class="keywordtype">char</span>*      <a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#aa4fe3a3e8203bf0177b60116bb55796c">tmp_filename_tbl</a>[<a class="code" href="gnuplot__i_8h.html#a0b92738856c4bda43003d1c847483dd2">GP_MAX_TMP_FILES</a>] ;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a5c5c7f25894c0e7c8c5b6dc2c3a38b94">   69</a></span>&#160;    <span class="keywordtype">int</span>       <a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a5c5c7f25894c0e7c8c5b6dc2c3a38b94">ntmp</a> ;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="gnuplot__i_8h.html#a33ca8c1cab7115ecc104f9d26d6fdf85">   70</a></span>&#160;} <a class="code" href="gnuplot__i_8h.html#a33ca8c1cab7115ecc104f9d26d6fdf85">gnuplot_ctrl</a> ;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/*---------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">                        Function ANSI C prototypes</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> ---------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * <a class="code" href="gnuplot__i_8h.html#af38602f2bf3bf427b4c6af1e3cc6f371">gnuplot_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a416bd48453ce016d6419f0f39fa5c625">gnuplot_close</a>(<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * handle);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a8c71c6b7a0d957fa9280bf4b984bf43a">gnuplot_cmd</a>(<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> *  handle, <span class="keywordtype">char</span> <span class="keyword">const</span> *  cmd, ...);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a6e5c073fc8478c3ea121f308254b683a">gnuplot_setstyle</a>(<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * h, <span class="keywordtype">char</span> * plot_style);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a7ca8edad06bd82e47329b2ab8341c42e">gnuplot_set_xlabel</a>(<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * h, <span class="keywordtype">char</span> * label);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a9227fc7321820f696e91f76c15c6ffe3">gnuplot_set_ylabel</a>(<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * h, <span class="keywordtype">char</span> * label);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#ad069541eba46f659f58635abc9256340">gnuplot_resetplot</a>(<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * h);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a40d69df891d29584351244cf046616b1">gnuplot_plot_x</a>(<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * handle, <span class="keywordtype">double</span> * d, <span class="keywordtype">int</span> n, <span class="keywordtype">char</span> * title);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a75d0c98d601621974e9687126f922ebd">gnuplot_plot_xy</a>(</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a>    *   handle,</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">double</span>          *   x,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">double</span>          *   y,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">int</span>                 n,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">char</span>            *   title</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;) ;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#aa39b56b6bb882ace839a3be677d1f665">gnuplot_plot_once</a>(</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">char</span>    *   title,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">char</span>    *   style,</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordtype">char</span>    *   label_x,</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordtype">char</span>    *   label_y,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordtype">double</span>  *   x,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keywordtype">double</span>  *   y,</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">int</span>         n</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a0622d593434823fccadcc4415db5fe2d">gnuplot_plot_slope</a>(</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a>    *   handle,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordtype">double</span>              a,</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordtype">double</span>              b,</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">char</span>            *   title</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;) ;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;<span class="comment">/*-------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;<span class="comment">/*--------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="keywordtype">void</span> <a class="code" href="gnuplot__i_8h.html#a6bdca4094881ef48bd03bb66a521bfdd">gnuplot_plot_equation</a>(<a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * h, <span class="keywordtype">char</span> * equation, <span class="keywordtype">char</span> * title) ;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gnuplot__i_8h.html#a23277037a4f23592ab1168a672813321">gnuplot_write_x_csv</a>(</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> * fileName,</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span> * d,</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keywordtype">int</span> n,</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> * title);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gnuplot__i_8h.html#ac1da1381d8ec7b1c6dca2e83720d7b60">gnuplot_write_xy_csv</a>(</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> *        fileName,</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>    *   x,</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>    *   y,</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordtype">int</span>                 n,</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span>      *   title);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gnuplot__i_8h.html#acd8c135ab07034327837d8b3b309301b">gnuplot_write_multi_csv</a>(</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span> *        fileName,</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordtype">double</span> <span class="keyword">const</span>    **  xListPtr,</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordtype">int</span>                 n,</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordtype">int</span>                 numColumns,</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordtype">char</span> <span class="keyword">const</span>      *   title);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct___g_n_u_p_l_o_t___c_t_r_l___html_aa4fe3a3e8203bf0177b60116bb55796c"><div class="ttname"><a href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#aa4fe3a3e8203bf0177b60116bb55796c">_GNUPLOT_CTRL_::tmp_filename_tbl</a></div><div class="ttdeci">char * tmp_filename_tbl[GP_MAX_TMP_FILES]</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8h_source.html#l00067">gnuplot_i.h:67</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a75d0c98d601621974e9687126f922ebd"><div class="ttname"><a href="gnuplot__i_8h.html#a75d0c98d601621974e9687126f922ebd">gnuplot_plot_xy</a></div><div class="ttdeci">void gnuplot_plot_xy(gnuplot_ctrl *handle, double *x, double *y, int n, char *title)</div><div class="ttdoc">Plot a 2d graph from a list of points.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00394">gnuplot_i.c:394</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a23277037a4f23592ab1168a672813321"><div class="ttname"><a href="gnuplot__i_8h.html#a23277037a4f23592ab1168a672813321">gnuplot_write_x_csv</a></div><div class="ttdeci">int gnuplot_write_x_csv(char const *fileName, double const *d, int n, char const *title)</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00525">gnuplot_i.c:525</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a33ca8c1cab7115ecc104f9d26d6fdf85"><div class="ttname"><a href="gnuplot__i_8h.html#a33ca8c1cab7115ecc104f9d26d6fdf85">gnuplot_ctrl</a></div><div class="ttdeci">struct _GNUPLOT_CTRL_ gnuplot_ctrl</div><div class="ttdoc">gnuplot session handle (opaque type).</div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a9227fc7321820f696e91f76c15c6ffe3"><div class="ttname"><a href="gnuplot__i_8h.html#a9227fc7321820f696e91f76c15c6ffe3">gnuplot_set_ylabel</a></div><div class="ttdeci">void gnuplot_set_ylabel(gnuplot_ctrl *h, char *label)</div><div class="ttdoc">Sets the y label of a gnuplot session.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00264">gnuplot_i.c:264</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a0b92738856c4bda43003d1c847483dd2"><div class="ttname"><a href="gnuplot__i_8h.html#a0b92738856c4bda43003d1c847483dd2">GP_MAX_TMP_FILES</a></div><div class="ttdeci">#define GP_MAX_TMP_FILES</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8h_source.html#l00034">gnuplot_i.h:34</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_aa39b56b6bb882ace839a3be677d1f665"><div class="ttname"><a href="gnuplot__i_8h.html#aa39b56b6bb882ace839a3be677d1f665">gnuplot_plot_once</a></div><div class="ttdeci">void gnuplot_plot_once(char *title, char *style, char *label_x, char *label_y, double *x, double *y, int n)</div><div class="ttdoc">Open a new session, plot a signal, close the session.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00450">gnuplot_i.c:450</a></div></div>
+<div class="ttc" id="astruct___g_n_u_p_l_o_t___c_t_r_l___html_a3ef5f7c93a493075059250cb3b74ce91"><div class="ttname"><a href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a3ef5f7c93a493075059250cb3b74ce91">_GNUPLOT_CTRL_::gnucmd</a></div><div class="ttdeci">FILE * gnucmd</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8h_source.html#l00059">gnuplot_i.h:59</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a0622d593434823fccadcc4415db5fe2d"><div class="ttname"><a href="gnuplot__i_8h.html#a0622d593434823fccadcc4415db5fe2d">gnuplot_plot_slope</a></div><div class="ttdeci">void gnuplot_plot_slope(gnuplot_ctrl *handle, double a, double b, char *title)</div><div class="ttdoc">Plot a slope on a gnuplot session.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00491">gnuplot_i.c:491</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_ad069541eba46f659f58635abc9256340"><div class="ttname"><a href="gnuplot__i_8h.html#ad069541eba46f659f58635abc9256340">gnuplot_resetplot</a></div><div class="ttdeci">void gnuplot_resetplot(gnuplot_ctrl *h)</div><div class="ttdoc">Resets a gnuplot session (next plot will erase previous ones).</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00281">gnuplot_i.c:281</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a6bdca4094881ef48bd03bb66a521bfdd"><div class="ttname"><a href="gnuplot__i_8h.html#a6bdca4094881ef48bd03bb66a521bfdd">gnuplot_plot_equation</a></div><div class="ttdeci">void gnuplot_plot_equation(gnuplot_ctrl *h, char *equation, char *title)</div><div class="ttdoc">Plot a curve of given equation y=f(x).</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00509">gnuplot_i.c:509</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_acd8c135ab07034327837d8b3b309301b"><div class="ttname"><a href="gnuplot__i_8h.html#acd8c135ab07034327837d8b3b309301b">gnuplot_write_multi_csv</a></div><div class="ttdeci">int gnuplot_write_multi_csv(char const *fileName, double const **xListPtr, int n, int numColumns, char const *title)</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00602">gnuplot_i.c:602</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a7ca8edad06bd82e47329b2ab8341c42e"><div class="ttname"><a href="gnuplot__i_8h.html#a7ca8edad06bd82e47329b2ab8341c42e">gnuplot_set_xlabel</a></div><div class="ttdeci">void gnuplot_set_xlabel(gnuplot_ctrl *h, char *label)</div><div class="ttdoc">Sets the x label of a gnuplot session.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00247">gnuplot_i.c:247</a></div></div>
+<div class="ttc" id="astruct___g_n_u_p_l_o_t___c_t_r_l___html_a8563b2999a18a1f65451f90d51bf38e8"><div class="ttname"><a href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a8563b2999a18a1f65451f90d51bf38e8">_GNUPLOT_CTRL_::nplots</a></div><div class="ttdeci">int nplots</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8h_source.html#l00062">gnuplot_i.h:62</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_af38602f2bf3bf427b4c6af1e3cc6f371"><div class="ttname"><a href="gnuplot__i_8h.html#af38602f2bf3bf427b4c6af1e3cc6f371">gnuplot_init</a></div><div class="ttdeci">gnuplot_ctrl * gnuplot_init(void)</div><div class="ttdoc">Opens up a gnuplot session, ready to receive commands.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00089">gnuplot_i.c:89</a></div></div>
+<div class="ttc" id="astruct___g_n_u_p_l_o_t___c_t_r_l___html_a5c5c7f25894c0e7c8c5b6dc2c3a38b94"><div class="ttname"><a href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#a5c5c7f25894c0e7c8c5b6dc2c3a38b94">_GNUPLOT_CTRL_::ntmp</a></div><div class="ttdeci">int ntmp</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8h_source.html#l00069">gnuplot_i.h:69</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a6e5c073fc8478c3ea121f308254b683a"><div class="ttname"><a href="gnuplot__i_8h.html#a6e5c073fc8478c3ea121f308254b683a">gnuplot_setstyle</a></div><div class="ttdeci">void gnuplot_setstyle(gnuplot_ctrl *h, char *plot_style)</div><div class="ttdoc">Change the plotting style of a gnuplot session.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00216">gnuplot_i.c:216</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a416bd48453ce016d6419f0f39fa5c625"><div class="ttname"><a href="gnuplot__i_8h.html#a416bd48453ce016d6419f0f39fa5c625">gnuplot_close</a></div><div class="ttdeci">void gnuplot_close(gnuplot_ctrl *handle)</div><div class="ttdoc">Closes a gnuplot session previously opened by gnuplot_init()</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00137">gnuplot_i.c:137</a></div></div>
+<div class="ttc" id="astruct___g_n_u_p_l_o_t___c_t_r_l___html"><div class="ttname"><a href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">_GNUPLOT_CTRL_</a></div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8h_source.html#l00057">gnuplot_i.h:57</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a40d69df891d29584351244cf046616b1"><div class="ttname"><a href="gnuplot__i_8h.html#a40d69df891d29584351244cf046616b1">gnuplot_plot_x</a></div><div class="ttdeci">void gnuplot_plot_x(gnuplot_ctrl *handle, double *d, int n, char *title)</div><div class="ttdoc">Plots a 2d graph from a list of doubles.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00328">gnuplot_i.c:328</a></div></div>
+<div class="ttc" id="astruct___g_n_u_p_l_o_t___c_t_r_l___html_aa8541672044781c87eab8eef4793ffe8"><div class="ttname"><a href="struct___g_n_u_p_l_o_t___c_t_r_l__.html#aa8541672044781c87eab8eef4793ffe8">_GNUPLOT_CTRL_::pstyle</a></div><div class="ttdeci">char pstyle[32]</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8h_source.html#l00064">gnuplot_i.h:64</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_ac1da1381d8ec7b1c6dca2e83720d7b60"><div class="ttname"><a href="gnuplot__i_8h.html#ac1da1381d8ec7b1c6dca2e83720d7b60">gnuplot_write_xy_csv</a></div><div class="ttdeci">int gnuplot_write_xy_csv(char const *fileName, double const *x, double const *y, int n, char const *title)</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00563">gnuplot_i.c:563</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html_a8c71c6b7a0d957fa9280bf4b984bf43a"><div class="ttname"><a href="gnuplot__i_8h.html#a8c71c6b7a0d957fa9280bf4b984bf43a">gnuplot_cmd</a></div><div class="ttdeci">void gnuplot_cmd(gnuplot_ctrl *handle, char const *cmd,...)</div><div class="ttdoc">Sends a command to an active gnuplot session.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00180">gnuplot_i.c:180</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Grafos: Existe un camino: Fichero Fuente C:/Users/DELL/Documents/Inv. de Operaciones/Competencia 2/Grafo_1/app.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Grafos: Existe un camino
+   </div>
+   <div id="projectbrief">Determina si existe un camino</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cbde632149960a0a3a1ee4bc30159459.html">Inv. de Operaciones</a></li><li class="navelem"><a class="el" href="dir_9f0b7800f99fc9fea99a68d6f3741b4f.html">Competencia 2</a></li><li class="navelem"><a class="el" href="dir_ba16497dd9956514dd7c5d00d97f98a9.html">Grafo_1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">app.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="app_8c.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_grafo_8h.html">Grafo.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="app_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   10</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="app_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> g[<a class="code" href="_grafo_8h.html#ade6979ed111d858e955f1f15d8882357">filas</a>][<a class="code" href="_grafo_8h.html#ade6979ed111d858e955f1f15d8882357">filas</a>];</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">int</span> inicio;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">int</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        printf(<span class="stringliteral">&quot;\nNodo inicio:  &quot;</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        scanf(<span class="stringliteral">&quot;%d&quot;</span>,&amp;inicio);    fflush(stdin);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        inicio=inicio-1;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        printf(<span class="stringliteral">&quot;\nNodo final:  &quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        scanf(<span class="stringliteral">&quot;%d&quot;</span>,&amp;<span class="keyword">final</span>);     fflush(stdin);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">final</span>=<span class="keyword">final</span>-1;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="_grafo_8c.html#a38e5855cc8998d6fc2dde0be5c1a678a">inicializar</a>(g);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="_grafo_8c.html#afc22d3da578bd64cc42a91ef3fc4b8cd">menuDos</a>(g,inicio,<span class="keyword">final</span>)== 1){</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            printf(<span class="stringliteral">&quot;\nNo existe un camino&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_grafo_8c_html_a38e5855cc8998d6fc2dde0be5c1a678a"><div class="ttname"><a href="_grafo_8c.html#a38e5855cc8998d6fc2dde0be5c1a678a">inicializar</a></div><div class="ttdeci">void inicializar(int g[][filas])</div><div class="ttdoc">Inicializa los valores.</div><div class="ttdef"><b>Definition:</b> <a href="_grafo_8c_source.html#l00010">Grafo.c:10</a></div></div>
+<div class="ttc" id="a_grafo_8c_html_afc22d3da578bd64cc42a91ef3fc4b8cd"><div class="ttname"><a href="_grafo_8c.html#afc22d3da578bd64cc42a91ef3fc4b8cd">menuDos</a></div><div class="ttdeci">int menuDos(int g[][filas], int inicio, int final)</div><div class="ttdoc">Evalua si existe un camino.</div><div class="ttdef"><b>Definition:</b> <a href="_grafo_8c_source.html#l00048">Grafo.c:48</a></div></div>
+<div class="ttc" id="aapp_8c_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="app_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="app_8c_source.html#l00010">app.c:10</a></div></div>
+<div class="ttc" id="a_grafo_8h_html_ade6979ed111d858e955f1f15d8882357"><div class="ttname"><a href="_grafo_8h.html#ade6979ed111d858e955f1f15d8882357">filas</a></div><div class="ttdeci">int filas</div><div class="ttdoc">Definicion de filas.</div><div class="ttdef"><b>Definition:</b> <a href="_grafo_8h_source.html#l00020">Grafo.h:20</a></div></div>
+<div class="ttc" id="a_grafo_8h_html"><div class="ttname"><a href="_grafo_8h.html">Grafo.h</a></div><div class="ttdoc">Declaracion de las funciones.</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

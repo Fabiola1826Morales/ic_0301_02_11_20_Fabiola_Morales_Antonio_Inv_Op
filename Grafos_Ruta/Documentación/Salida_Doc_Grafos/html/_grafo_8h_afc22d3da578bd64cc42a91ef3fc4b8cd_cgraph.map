@@ -1,0 +1,6 @@
+<map id="menuDos" name="menuDos">
+<area shape="rect" id="node1" title="Evalua si existe un camino." alt="" coords="5,56,83,83"/>
+<area shape="rect" id="node2" href="$_grafo_8c.html#ac9611f74b75fc3bb8c229d2fa53bcad3" title="Busca el nodo final." alt="" coords="131,5,252,32"/>
+<area shape="rect" id="node3" href="$_grafo_8c.html#a152c3c2fbda73f8e3ffe99b0b79e38ac" title="Se comparan los nodos." alt="" coords="300,81,457,108"/>
+<area shape="rect" id="node4" href="$_grafo_8c.html#a816f40ab0476c5eeb17ba3934050d7d7" title="Llena la matriz para indicar que se puede llegar al nodo final." alt="" coords="155,107,227,133"/>
+</map>

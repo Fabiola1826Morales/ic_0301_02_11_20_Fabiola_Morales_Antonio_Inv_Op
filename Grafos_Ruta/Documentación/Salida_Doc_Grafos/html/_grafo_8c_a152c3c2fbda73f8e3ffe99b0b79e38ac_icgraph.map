@@ -1,0 +1,6 @@
+<map id="CompararconnodoInicio" name="CompararconnodoInicio">
+<area shape="rect" id="node1" title="Se comparan los nodos." alt="" coords="349,5,507,32"/>
+<area shape="rect" id="node2" href="$_grafo_8h.html#afc22d3da578bd64cc42a91ef3fc4b8cd" title="Evalua si existe un camino." alt="" coords="104,5,181,32"/>
+<area shape="rect" id="node4" href="$_grafo_8h.html#a816f40ab0476c5eeb17ba3934050d7d7" title="Llena la matriz para indicar que se puede llegar al nodo final." alt="" coords="229,31,301,57"/>
+<area shape="rect" id="node3" href="$app_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>

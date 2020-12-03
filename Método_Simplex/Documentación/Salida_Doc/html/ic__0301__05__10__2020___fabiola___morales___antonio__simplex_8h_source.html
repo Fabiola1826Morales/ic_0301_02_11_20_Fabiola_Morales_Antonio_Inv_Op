@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Método simplex: Fichero Fuente C:/Users/DELL/Documents/Inv. de Operaciones/Competencia 1/Final/ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Método simplex
+   </div>
+   <div id="projectbrief">Resolucion de problemas</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cbde632149960a0a3a1ee4bc30159459.html">Inv. de Operaciones</a></li><li class="navelem"><a class="el" href="dir_5b509c052ddc38f704bca79d34549c6f.html">Competencia 1</a></li><li class="navelem"><a class="el" href="dir_0f8a5f5a4785b1e5e900279809608c95.html">Final</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define __ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#a392fb874e547e582e9c66a08a1f23326">   17</a></span>&#160;<span class="preprocessor">#define MAX 10</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#abe78fc69e808b2611e189208098ac6c2">   21</a></span>&#160;<span class="preprocessor">#define RESTRICCION 3</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#af3f36ce676f5facbcbccec07d71554f0">   28</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#af3f36ce676f5facbcbccec07d71554f0">funcion</a>[<a class="code" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#a392fb874e547e582e9c66a08a1f23326">MAX</a>];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#aa59c5314a9730c4cc133b6e04541b48c">   36</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#aa59c5314a9730c4cc133b6e04541b48c">restricciones</a>[<a class="code" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#a392fb874e547e582e9c66a08a1f23326">MAX</a>+1][<a class="code" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#a392fb874e547e582e9c66a08a1f23326">MAX</a>+<a class="code" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#abe78fc69e808b2611e189208098ac6c2">RESTRICCION</a>];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#ad37976bcb557972e22696953d70dc825">   43</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#ad37976bcb557972e22696953d70dc825">independiente</a>[<a class="code" href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#abe78fc69e808b2611e189208098ac6c2">RESTRICCION</a>];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_html_abe78fc69e808b2611e189208098ac6c2"><div class="ttname"><a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#abe78fc69e808b2611e189208098ac6c2">RESTRICCION</a></div><div class="ttdeci">#define RESTRICCION</div><div class="ttdoc">Se definen la cantidad de restricciones.</div><div class="ttdef"><b>Definition:</b> <a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_source.html#l00021">ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex.h:21</a></div></div>
+<div class="ttc" id="aic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_html_a392fb874e547e582e9c66a08a1f23326"><div class="ttname"><a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#a392fb874e547e582e9c66a08a1f23326">MAX</a></div><div class="ttdeci">#define MAX</div><div class="ttdoc">Se definen la cantidad maxima.</div><div class="ttdef"><b>Definition:</b> <a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_source.html#l00017">ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex.h:17</a></div></div>
+<div class="ttc" id="aic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_html_aa59c5314a9730c4cc133b6e04541b48c"><div class="ttname"><a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#aa59c5314a9730c4cc133b6e04541b48c">restricciones</a></div><div class="ttdeci">double restricciones[MAX+1][MAX+RESTRICCION]</div><div class="ttdoc">Indica las restricciones maximas.</div><div class="ttdef"><b>Definition:</b> <a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_source.html#l00036">ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex.h:36</a></div></div>
+<div class="ttc" id="aic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_html_af3f36ce676f5facbcbccec07d71554f0"><div class="ttname"><a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#af3f36ce676f5facbcbccec07d71554f0">funcion</a></div><div class="ttdeci">double funcion[MAX]</div><div class="ttdoc">Indica las funciones maximas.</div><div class="ttdef"><b>Definition:</b> <a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_source.html#l00028">ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex.h:28</a></div></div>
+<div class="ttc" id="aic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_html_ad37976bcb557972e22696953d70dc825"><div class="ttname"><a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h.html#ad37976bcb557972e22696953d70dc825">independiente</a></div><div class="ttdeci">double independiente[RESTRICCION]</div><div class="ttdoc">Indica las restricciones independientes.</div><div class="ttdef"><b>Definition:</b> <a href="ic__0301__05__10__2020___fabiola___morales___antonio__simplex_8h_source.html#l00043">ic_0301_05_10_2020_Fabiola_Morales_Antonio_simplex.h:43</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Grafica de una ecuaciÃ³n lineal: Fichero Fuente C:/Users/DELL/Downloads/Graficas/correcta/gnuplot_i/test/sinepng.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Grafica de una ecuaciÃ³n lineal
+   </div>
+   <div id="projectbrief">Se grafica mediante ayuda de una api</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2c12105386bcc5c3935feab96f296a41.html">Downloads</a></li><li class="navelem"><a class="el" href="dir_a012d146b38a71895bc17ea9b2bde3b5.html">Graficas</a></li><li class="navelem"><a class="el" href="dir_769f32cee29bccd11be666fa225ebb35.html">correcta</a></li><li class="navelem"><a class="el" href="dir_fc971fec3088f64c4111208600ed08a7.html">gnuplot_i</a></li><li class="navelem"><a class="el" href="dir_660f18a88a40be015a92b80484a2ef31.html">test</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sinepng.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sinepng_8c.html">Ir a la documentaciÃ³n de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gnuplot__i_8h.html">gnuplot_i.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="sinepng_8c.html#a0ddf1224851353fc92bfbff6f499fa97">    8</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="sinepng_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> * argv[])</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">gnuplot_ctrl</a> * g = <a class="code" href="gnuplot__i_8c.html#af38602f2bf3bf427b4c6af1e3cc6f371">gnuplot_init</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="gnuplot__i_8c.html#a8c71c6b7a0d957fa9280bf4b984bf43a">gnuplot_cmd</a>(g, <span class="stringliteral">&quot;set terminal png&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="gnuplot__i_8c.html#a8c71c6b7a0d957fa9280bf4b984bf43a">gnuplot_cmd</a>(g, <span class="stringliteral">&quot;set output \&quot;sine.png\&quot;&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="gnuplot__i_8c.html#a6bdca4094881ef48bd03bb66a521bfdd">gnuplot_plot_equation</a>(g, <span class="stringliteral">&quot;sin(x)&quot;</span>, <span class="stringliteral">&quot;Sine wave&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="gnuplot__i_8c.html#a416bd48453ce016d6419f0f39fa5c625">gnuplot_close</a>(g);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> 0 ;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="agnuplot__i_8c_html_a6bdca4094881ef48bd03bb66a521bfdd"><div class="ttname"><a href="gnuplot__i_8c.html#a6bdca4094881ef48bd03bb66a521bfdd">gnuplot_plot_equation</a></div><div class="ttdeci">void gnuplot_plot_equation(gnuplot_ctrl *h, char *equation, char *title)</div><div class="ttdoc">Plot a curve of given equation y=f(x).</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00509">gnuplot_i.c:509</a></div></div>
+<div class="ttc" id="agnuplot__i_8h_html"><div class="ttname"><a href="gnuplot__i_8h.html">gnuplot_i.h</a></div><div class="ttdoc">C interface to gnuplot.</div></div>
+<div class="ttc" id="asinepng_8c_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="sinepng_8c.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="sinepng_8c_source.html#l00008">sinepng.c:8</a></div></div>
+<div class="ttc" id="astruct___g_n_u_p_l_o_t___c_t_r_l___html"><div class="ttname"><a href="struct___g_n_u_p_l_o_t___c_t_r_l__.html">_GNUPLOT_CTRL_</a></div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8h_source.html#l00057">gnuplot_i.h:57</a></div></div>
+<div class="ttc" id="agnuplot__i_8c_html_a8c71c6b7a0d957fa9280bf4b984bf43a"><div class="ttname"><a href="gnuplot__i_8c.html#a8c71c6b7a0d957fa9280bf4b984bf43a">gnuplot_cmd</a></div><div class="ttdeci">void gnuplot_cmd(gnuplot_ctrl *handle, char const *cmd,...)</div><div class="ttdoc">Envía un comando a una sesión de gnuplot activa.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00180">gnuplot_i.c:180</a></div></div>
+<div class="ttc" id="agnuplot__i_8c_html_af38602f2bf3bf427b4c6af1e3cc6f371"><div class="ttname"><a href="gnuplot__i_8c.html#af38602f2bf3bf427b4c6af1e3cc6f371">gnuplot_init</a></div><div class="ttdeci">gnuplot_ctrl * gnuplot_init(void)</div><div class="ttdoc">Abre una sesión de gnuplot, listo para recibir órdenes.</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00089">gnuplot_i.c:89</a></div></div>
+<div class="ttc" id="agnuplot__i_8c_html_a416bd48453ce016d6419f0f39fa5c625"><div class="ttname"><a href="gnuplot__i_8c.html#a416bd48453ce016d6419f0f39fa5c625">gnuplot_close</a></div><div class="ttdeci">void gnuplot_close(gnuplot_ctrl *handle)</div><div class="ttdoc">Cierra una sesión de gnuplot previamente abierta por gnuplot_init()</div><div class="ttdef"><b>Definition:</b> <a href="gnuplot__i_8c_source.html#l00137">gnuplot_i.c:137</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20
+</small></address>
+</body>
+</html>

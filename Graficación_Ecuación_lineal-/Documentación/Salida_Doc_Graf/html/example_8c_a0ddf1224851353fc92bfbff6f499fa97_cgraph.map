@@ -1,0 +1,14 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,56,209"/>
+<area shape="rect" id="node2" href="$gnuplot__i_8c.html#a416bd48453ce016d6419f0f39fa5c625" title="Cierra una sesión de gnuplot previamente abierta por gnuplot_init()" alt="" coords="113,5,216,32"/>
+<area shape="rect" id="node3" href="$gnuplot__i_8c.html#af38602f2bf3bf427b4c6af1e3cc6f371" title="Abre una sesión de gnuplot, listo para recibir órdenes." alt="" coords="121,107,209,133"/>
+<area shape="rect" id="node4" href="$gnuplot__i_8c.html#a6e5c073fc8478c3ea121f308254b683a" title="Change the plotting style of a gnuplot session." alt="" coords="289,107,406,133"/>
+<area shape="rect" id="node5" href="$gnuplot__i_8c.html#a6bdca4094881ef48bd03bb66a521bfdd" title="Plot a curve of given equation y=f(x)." alt="" coords="273,157,421,184"/>
+<area shape="rect" id="node7" href="$gnuplot__i_8c.html#a0622d593434823fccadcc4415db5fe2d" title="Plot a slope on a gnuplot session." alt="" coords="282,309,413,336"/>
+<area shape="rect" id="node8" href="$gnuplot__i_8c.html#a40d69df891d29584351244cf046616b1" title="Plots a 2d graph from a list of doubles." alt="" coords="111,259,218,285"/>
+<area shape="rect" id="node11" href="$gnuplot__i_8c.html#a75d0c98d601621974e9687126f922ebd" title="Plot a 2d graph from a list of points." alt="" coords="108,208,221,235"/>
+<area shape="rect" id="node12" href="$gnuplot__i_8c.html#ad069541eba46f659f58635abc9256340" title="Resets a gnuplot session (next plot will erase previous ones)." alt="" coords="104,360,225,387"/>
+<area shape="rect" id="node6" href="$gnuplot__i_8c.html#a8c71c6b7a0d957fa9280bf4b984bf43a" title="Envía un comando a una sesión de gnuplot activa." alt="" coords="469,259,565,285"/>
+<area shape="rect" id="node9" href="$gnuplot__i_8c.html#af0ef8c4e1526d98455a6e5dd71a96c15" title=" " alt="" coords="275,259,419,285"/>
+<area shape="rect" id="node10" href="$gnuplot__i_8c.html#a51bd7367a0dc2f09651c6109963641d1" title=" " alt="" coords="293,208,402,235"/>
+</map>
